@@ -1,0 +1,34 @@
+<!-- Question 10 -->
+
+<!-- Use setTimeout to change the content of the button from 'Click Me!'
+to 'I've been clicked!' after 500 milliseconds, but ONLY
+when you click on the button. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test 1</title>
+</head>
+<body>
+
+    <h1>Question 10</h1>
+
+    <button id="btn">Click Me!</button>
+
+    <!-- Your JavaScript code -->
+    <script>
+    const button = document.querySelector('#btn')
+    const paragraph = document.querySelector('#paragraph')
+
+      button.addEventListener('click', function() {
+        setTimeout(function() {
+          button.textContent = 'I\'ve been clicked!'
+        }, 500)
+        })
+
+    </script>
+</body>
+</html>
